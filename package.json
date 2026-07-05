@@ -1,0 +1,30 @@
+{
+  "name": "way2travels",
+  "version": "1.0.0",
+  "description": "Way2Travels full-stack travel website with backend APIs and admin dashboard.",
+  "main": "server.js",
+  "scripts": {
+    "seed": "node prisma/seed.js",
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check public/admin.js"
+  },
+  "keywords": [
+    "travel",
+    "admin",
+    "backend",
+    "frontend"
+  ],
+  "author": "Way2Travels",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.12.0",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.10.0",
+    "dotenv": "^17.4.2",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "prisma": "^5.12.0",
+    "resend": "^6.17.0"
+  }
+}

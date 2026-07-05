@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules/
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Databases
+*.db
+*.db-journal
+
+# Uploads and temporary files
+uploads/*
+!uploads/.gitkeep
+*.log
+.DS_Store
+dist/
+build/

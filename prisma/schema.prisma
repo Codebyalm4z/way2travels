@@ -1,0 +1,156 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Since SQLite does not support native enums, we use string fields with constrained values in application logic.
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("ADMIN") // SUPER_ADMIN, ADMIN, EDITOR
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Destination {
+  id              String   @id @default(cuid())
+  name            String
+  slug            String   @unique
+  type            String
+  coverImage      String?
+  summary         String?
+  seoTitle        String?
+  seoDescription  String?
+  isPublished     Boolean  @default(true)
+  packages        Package[]
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Package {
+  id               String          @id @default(cuid())
+  title            String
+  slug             String          @unique
+  destinationId    String
+  destination      Destination     @relation(fields: [destinationId], references: [id])
+  type             String
+  cities           String          // JSON string for array of city names
+  nights           Int
+  days             Int
+  price            Int
+  oldPrice         Int?
+  discount         Int?
+  hotelOptions     String          // JSON string for array of hotel options
+  packageType      String?
+  featured         Boolean         @default(false)
+  isPublished      Boolean         @default(true)
+  image            String?
+  gallery          PackageImage[]
+  itinerary        ItineraryDay[]
+  inclusions       String          // JSON string for array
+  exclusions       String          // JSON string for array
+  terms            String?
+  seoTitle         String?
+  seoDescription   String?
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+}
+
+model PackageImage {
+  id        String   @id @default(cuid())
+  url       String
+  alt       String?
+  packageId String
+  package   Package @relation(fields: [packageId], references: [id], onDelete: Cascade)
+}
+
+model ItineraryDay {
+  id        String   @id @default(cuid())
+  dayNumber Int
+  title     String?
+  details   String
+  packageId String
+  package   Package @relation(fields: [packageId], references: [id], onDelete: Cascade)
+}
+
+model Review {
+  id           String   @id @default(cuid())
+  name         String
+  city         String?
+  country      String?
+  rating       Int
+  text         String
+  destination  String?
+  photo        String?
+  approved     Boolean  @default(false)
+  verified     Boolean  @default(false)
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Inquiry {
+  id          String   @id @default(cuid())
+  name        String
+  email       String?
+  phone       String
+  destination String?
+  package     String?
+  travelDate  DateTime?
+  travelers   Int      @default(1)
+  message     String?
+  status      String   @default("NEW") // NEW, CONTACTED, QUOTED, WON, LOST
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model BlogPost {
+  id             String   @id @default(cuid())
+  title          String
+  slug           String   @unique
+  category       String?
+  coverImage     String?
+  excerpt        String?
+  content        String
+  tags           String   // JSON string for array of tags
+  seoTitle       String?
+  seoDescription String?
+  isPublished    Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model FAQ {
+  id          String   @id @default(cuid())
+  question    String
+  answer      String
+  scope       String?
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model SiteSetting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Offer {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

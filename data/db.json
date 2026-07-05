@@ -1,0 +1,622 @@
+{
+  "settings": {
+    "brandName": "Way2Travels",
+    "email": "info@way2travels.com",
+    "phone": "+91 92581 91298",
+    "whatsapp": "+91 92581 91298",
+    "address": "Way2Travels Travel Desk, India",
+    "heroTitle": "Discover Your Next Adventure",
+    "heroSubtitle": "Handpicked holidays, honest pricing, and 24x7 travel support for families, couples, and groups.",
+    "popupOffer": "Get a free custom itinerary within 30 minutes",
+    "socialInstagram": "https://instagram.com/way2travels",
+    "socialFacebook": "https://facebook.com/way2travels"
+  },
+  "users": [
+    {
+      "id": "u1",
+      "name": "Way2Travels Admin",
+      "email": "admin@way2travels.com",
+      "password": "way2travels123",
+      "role": "SUPER_ADMIN"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "d1",
+      "name": "Kerala",
+      "slug": "kerala",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Backwaters, tea hills, Ayurveda, houseboats, and peaceful beaches.",
+      "isPublished": true,
+      "updatedAt": "2026-07-03T19:20:47.752Z"
+    },
+    {
+      "id": "d2",
+      "name": "Himachal",
+      "slug": "himachal",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Mountain towns, adventure activities, pine forests, and snow views.",
+      "isPublished": true
+    },
+    {
+      "id": "d3",
+      "name": "Kashmir",
+      "slug": "kashmir",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Srinagar, Gulmarg, Pahalgam, houseboats, and unforgettable valleys.",
+      "isPublished": true
+    },
+    {
+      "id": "d4",
+      "name": "Karnataka",
+      "slug": "karnataka",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Coorg, Mysore, Hampi, beaches, coffee estates, and heritage stays.",
+      "isPublished": true
+    },
+    {
+      "id": "d5",
+      "name": "Tamil Nadu",
+      "slug": "tamil-nadu",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Temples, hill stations, culture, coastline, and family-friendly routes.",
+      "isPublished": true
+    },
+    {
+      "id": "d6",
+      "name": "Goa",
+      "slug": "goa",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Beaches, nightlife, villas, water sports, cafes, and relaxed holidays.",
+      "isPublished": true
+    },
+    {
+      "id": "d7",
+      "name": "Andaman",
+      "slug": "andaman",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Island stays, beaches, ferries, scuba, and honeymoon-friendly plans.",
+      "isPublished": true
+    },
+    {
+      "id": "d8",
+      "name": "Darjeeling & Gangtok",
+      "slug": "darjeeling-gangtok",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Tea gardens, monasteries, mountain railways, and Himalayan views.",
+      "isPublished": true
+    },
+    {
+      "id": "d9",
+      "name": "Meghalaya",
+      "slug": "meghalaya",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1625826413749-001bd75a14da?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Waterfalls, living root bridges, caves, scenic villages, and road trips.",
+      "isPublished": true
+    },
+    {
+      "id": "d10",
+      "name": "Rajasthan",
+      "slug": "rajasthan",
+      "type": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Forts, palaces, desert camps, heritage hotels, and royal experiences.",
+      "isPublished": true
+    },
+    {
+      "id": "d11",
+      "name": "Thailand",
+      "slug": "thailand",
+      "type": "International",
+      "coverImage": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Bangkok, Pattaya, Phuket, Krabi, islands, shopping, and nightlife.",
+      "isPublished": true
+    },
+    {
+      "id": "d12",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "type": "International",
+      "coverImage": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Kuala Lumpur, Genting, Langkawi, theme parks, and city breaks.",
+      "isPublished": true
+    },
+    {
+      "id": "d13",
+      "name": "Maldives",
+      "slug": "maldives",
+      "type": "International",
+      "coverImage": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Luxury islands, water villas, snorkeling, honeymoons, and beach escapes.",
+      "isPublished": true
+    },
+    {
+      "id": "d14",
+      "name": "Dubai",
+      "slug": "dubai",
+      "type": "International",
+      "coverImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Desert safari, Burj Khalifa, malls, cruises, theme parks, and family fun.",
+      "isPublished": true
+    },
+    {
+      "id": "d15",
+      "name": "Bali",
+      "slug": "bali",
+      "type": "International",
+      "coverImage": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Ubud, beaches, waterfalls, villas, temples, and honeymoon stays.",
+      "isPublished": true
+    },
+    {
+      "id": "d16",
+      "name": "Vietnam",
+      "slug": "vietnam",
+      "type": "International",
+      "coverImage": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Hanoi, Da Nang, Ho Chi Minh, Halong Bay, food, and culture.",
+      "isPublished": true
+    },
+    {
+      "id": "d17",
+      "name": "Singapore",
+      "slug": "singapore",
+      "type": "International",
+      "coverImage": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Sentosa, Universal Studios, Marina Bay, gardens, and family holidays.",
+      "isPublished": true
+    }
+  ],
+  "packages": [
+    {
+      "id": "p1",
+      "title": "Bali & Ubud Escape",
+      "slug": "bali-ubud-escape",
+      "destinationId": "d15",
+      "type": "International",
+      "cities": [
+        "Kuta",
+        "Ubud",
+        "Nusa Penida"
+      ],
+      "nights": 5,
+      "days": 6,
+      "price": 30000,
+      "oldPrice": 38999,
+      "discount": 23,
+      "hotelOptions": [
+        "3 Star",
+        "4 Star",
+        "5 Star"
+      ],
+      "packageType": "Honeymoon",
+      "featured": true,
+      "isPublished": true,
+      "image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "inclusions": [
+        "Hotel",
+        "Sightseeing",
+        "Breakfast",
+        "Transfers",
+        "24x7 Support"
+      ],
+      "exclusions": [
+        "Flights",
+        "Visa fees",
+        "Personal expenses"
+      ],
+      "itinerary": [
+        "Arrival in Bali and transfer to Kuta",
+        "Water sports and Uluwatu sunset",
+        "Nusa Penida island tour",
+        "Ubud waterfalls and rice terraces",
+        "Leisure day for cafes and shopping",
+        "Departure transfer"
+      ],
+      "terms": "Prices are starting rates and can vary by travel date, hotel category, and availability."
+    },
+    {
+      "id": "p2",
+      "title": "Vietnam Highlights",
+      "slug": "vietnam-highlights",
+      "destinationId": "d16",
+      "type": "International",
+      "cities": [
+        "Hanoi",
+        "Da Nang",
+        "Ho Chi Minh"
+      ],
+      "nights": 4,
+      "days": 5,
+      "price": 30000,
+      "oldPrice": 36500,
+      "discount": 18,
+      "hotelOptions": [
+        "3 Star",
+        "4 Star"
+      ],
+      "packageType": "Family",
+      "featured": true,
+      "isPublished": true,
+      "image": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "inclusions": [
+        "Hotel",
+        "Sightseeing",
+        "Breakfast",
+        "Transfers",
+        "24x7 Support"
+      ],
+      "exclusions": [
+        "Flights",
+        "Visa fees",
+        "Lunch and dinner"
+      ],
+      "itinerary": [
+        "Arrive Hanoi",
+        "City tour and local market",
+        "Da Nang beaches and bridges",
+        "Ho Chi Minh highlights",
+        "Departure"
+      ],
+      "terms": "Final quote depends on chosen flights and hotel availability."
+    },
+    {
+      "id": "p3",
+      "title": "Kerala Escape",
+      "slug": "kerala-escape",
+      "destinationId": "d1",
+      "type": "Domestic",
+      "cities": [
+        "Munnar",
+        "Thekkady",
+        "Alleppey"
+      ],
+      "nights": 4,
+      "days": 5,
+      "price": 16000,
+      "oldPrice": 21000,
+      "discount": 24,
+      "hotelOptions": [
+        "3 Star",
+        "4 Star",
+        "Houseboat"
+      ],
+      "packageType": "Family",
+      "featured": true,
+      "isPublished": true,
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1589983846997-04788035bc8b?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "inclusions": [
+        "Hotel",
+        "Sightseeing",
+        "Breakfast",
+        "Private Cab",
+        "Support"
+      ],
+      "exclusions": [
+        "Flights or train",
+        "Entry tickets",
+        "Personal expenses"
+      ],
+      "itinerary": [
+        "Cochin to Munnar",
+        "Munnar sightseeing",
+        "Thekkady spice route",
+        "Alleppey houseboat",
+        "Departure"
+      ],
+      "terms": "Houseboat category and route are subject to availability."
+    },
+    {
+      "id": "p4",
+      "title": "Thailand Bangkok Pattaya",
+      "slug": "thailand-bangkok-pattaya",
+      "destinationId": "d11",
+      "type": "International",
+      "cities": [
+        "Bangkok",
+        "Pattaya"
+      ],
+      "nights": 4,
+      "days": 5,
+      "price": 28000,
+      "oldPrice": 34999,
+      "discount": 20,
+      "hotelOptions": [
+        "3 Star",
+        "4 Star"
+      ],
+      "packageType": "Group",
+      "featured": true,
+      "isPublished": true,
+      "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "inclusions": [
+        "Hotel",
+        "Sightseeing",
+        "Breakfast",
+        "Transfers",
+        "Support"
+      ],
+      "exclusions": [
+        "Flights",
+        "Visa on arrival",
+        "Personal expenses"
+      ],
+      "itinerary": [
+        "Arrival and Pattaya transfer",
+        "Coral Island tour",
+        "Bangkok city tour",
+        "Safari World optional",
+        "Departure"
+      ],
+      "terms": "Optional activities can be added during customization."
+    },
+    {
+      "id": "p5",
+      "title": "Dubai Family Holiday",
+      "slug": "dubai-family-holiday",
+      "destinationId": "d14",
+      "type": "International",
+      "cities": [
+        "Dubai",
+        "Abu Dhabi"
+      ],
+      "nights": 4,
+      "days": 5,
+      "price": 42000,
+      "oldPrice": 52000,
+      "discount": 19,
+      "hotelOptions": [
+        "3 Star",
+        "4 Star",
+        "5 Star"
+      ],
+      "packageType": "Family",
+      "featured": true,
+      "isPublished": true,
+      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "inclusions": [
+        "Hotel",
+        "Sightseeing",
+        "Breakfast",
+        "Transfers",
+        "24x7 Support"
+      ],
+      "exclusions": [
+        "Flights",
+        "Visa",
+        "Tourism dirham"
+      ],
+      "itinerary": [
+        "Arrival and Dhow cruise",
+        "Dubai city tour and Burj Khalifa",
+        "Desert safari",
+        "Abu Dhabi or theme park",
+        "Departure"
+      ],
+      "terms": "Burj Khalifa slot depends on availability."
+    },
+    {
+      "id": "p6",
+      "title": "Kashmir Paradise",
+      "slug": "kashmir-paradise",
+      "destinationId": "d3",
+      "type": "Domestic",
+      "cities": [
+        "Srinagar",
+        "Gulmarg",
+        "Pahalgam"
+      ],
+      "nights": 5,
+      "days": 6,
+      "price": 24000,
+      "oldPrice": 31000,
+      "discount": 23,
+      "hotelOptions": [
+        "3 Star",
+        "4 Star",
+        "Houseboat"
+      ],
+      "packageType": "Family",
+      "featured": true,
+      "isPublished": true,
+      "image": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566837497312-7be4a3ecf334?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1581791538302-03537b9c97bf?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "inclusions": [
+        "Hotel",
+        "Sightseeing",
+        "Breakfast",
+        "Private Cab",
+        "Support"
+      ],
+      "exclusions": [
+        "Flights",
+        "Gondola tickets",
+        "Snow activities"
+      ],
+      "itinerary": [
+        "Arrival Srinagar",
+        "Gulmarg day trip",
+        "Pahalgam valley tour",
+        "Srinagar gardens",
+        "Houseboat experience",
+        "Departure"
+      ],
+      "terms": "Snow activity pricing varies by season."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r894905c4f1aa",
+      "name": "Rahul",
+      "city": "Mumbai",
+      "country": "India",
+      "destination": "Kerala",
+      "rating": 5,
+      "displayOrder": 10,
+      "text": "Very good package and supoport",
+      "approved": true,
+      "verified": true,
+      "createdAt": "2026-07-03T19:22:04.485Z",
+      "updatedAt": "2026-07-03T19:22:04.485Z"
+    },
+    {
+      "id": "r1",
+      "name": "Riya Sharma",
+      "city": "Delhi",
+      "country": "India",
+      "rating": 5,
+      "destination": "Bali",
+      "text": "Our Bali trip was very smooth. The villa suggestion in Ubud was actually better than what we had shortlisted, and the driver was always on time.",
+      "approved": true,
+      "verified": false,
+      "displayOrder": 1
+    },
+    {
+      "id": "r2",
+      "name": "Ankit Verma",
+      "city": "Lucknow",
+      "country": "India",
+      "rating": 5,
+      "destination": "Thailand",
+      "text": "Good planning for Bangkok and Pattaya. Coral Island was crowded but the team had already warned us, so no surprise there. Overall worth the money.",
+      "approved": true,
+      "verified": false,
+      "displayOrder": 2
+    },
+    {
+      "id": "r3",
+      "name": "Megha Nair",
+      "city": "Bengaluru",
+      "country": "India",
+      "rating": 4,
+      "destination": "Kerala",
+      "text": "Munnar hotel view was beautiful and the Alleppey houseboat food was simple but fresh. Cab was clean. Would book again.",
+      "approved": true,
+      "verified": false,
+      "displayOrder": 3
+    },
+    {
+      "id": "r4",
+      "name": "Sahil Khan",
+      "city": "Mumbai",
+      "country": "India",
+      "rating": 5,
+      "destination": "Kashmir",
+      "text": "The Kashmir itinerary was not rushed, which my parents liked. Small issue with hotel check-in but it was handled in ten minutes.",
+      "approved": true,
+      "verified": false,
+      "displayOrder": 4
+    },
+    {
+      "id": "r5",
+      "name": "Priyanka Jain",
+      "city": "Jaipur",
+      "country": "India",
+      "rating": 5,
+      "destination": "Dubai",
+      "text": "Dubai package was neatly arranged. Desert safari and Dhow cruise were the highlights for our kids. Pricing was clear in INR.",
+      "approved": true,
+      "verified": false,
+      "displayOrder": 5
+    },
+    {
+      "id": "r6",
+      "name": "Nikhil Sood",
+      "city": "Chandigarh",
+      "country": "India",
+      "rating": 4,
+      "destination": "Vietnam",
+      "text": "Vietnam plan was good and hotels were close to markets. We changed one sightseeing slot last minute and support helped us manage it.",
+      "approved": true,
+      "verified": false,
+      "displayOrder": 6
+    }
+  ],
+  "inquiries": [],
+  "blogs": [
+    {
+      "id": "b1",
+      "title": "Best Time to Visit Bali from India",
+      "slug": "best-time-to-visit-bali-from-india",
+      "category": "International",
+      "coverImage": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+      "excerpt": "A simple season guide for honeymooners, families, and first-time Bali travelers.",
+      "content": "Bali is comfortable for most Indian travelers between April and October, when beach days are clearer and outdoor sightseeing is easier. For better value, compare shoulder-season dates and avoid long weekend surges.",
+      "isPublished": true,
+      "seoTitle": "Best Time to Visit Bali from India",
+      "seoDescription": "Season guide for Bali holidays from India."
+    },
+    {
+      "id": "b2",
+      "title": "How to Choose a Kashmir Family Package",
+      "slug": "choose-kashmir-family-package",
+      "category": "Domestic",
+      "coverImage": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80",
+      "excerpt": "What to check before booking Srinagar, Gulmarg, and Pahalgam together.",
+      "content": "A Kashmir family package should balance travel time, hotel location, and weather. Keep one flexible slot for snow activities or local shopping so the trip does not feel rushed.",
+      "isPublished": true,
+      "seoTitle": "Kashmir Family Package Guide",
+      "seoDescription": "Tips for Kashmir holiday planning."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "f1",
+      "question": "Can I customize a package?",
+      "answer": "Yes. Share your dates, budget, hotel preference, and traveler count. The Way2Travels team will adjust the itinerary and pricing.",
+      "isPublished": true
+    },
+    {
+      "id": "f2",
+      "question": "Are prices shown in INR?",
+      "answer": "Yes, all package starting prices are shown in Indian Rupees. Final pricing depends on travel date, hotel category, and availability.",
+      "isPublished": true
+    },
+    {
+      "id": "f3",
+      "question": "How do I contact Way2Travels?",
+      "answer": "Call or WhatsApp +91 92581 91298, or email info@way2travels.com.",
+      "isPublished": true
+    }
+  ],
+  "offers": [
+    {
+      "id": "o1",
+      "title": "Free Custom Itinerary",
+      "description": "Send your travel dates and get a personalized plan with INR pricing.",
+      "isPublished": true
+    }
+  ]
+}

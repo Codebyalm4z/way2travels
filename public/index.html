@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Way2Travels | Custom Travel Packages in INR</title>
+  <meta name="description" content="Way2Travels creates domestic and international travel packages with INR pricing, custom itineraries, and travel support.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home"><span>Way2</span>Travels</a>
+    <nav>
+      <a href="#packages">Packages</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#contact">Contact</a>
+      <a class="admin-link" href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Custom holidays from India</p>
+        <h1>Discover Your Next Adventure</h1>
+        <p id="heroSubtitle">Handpicked holidays, honest pricing, and 24x7 travel support.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#packages">Explore Packages</a>
+          <a class="btn ghost" id="heroWhatsapp" href="#">WhatsApp Us</a>
+        </div>
+      </div>
+      <form class="search-card" id="quickInquiry">
+        <h2>Request Callback</h2>
+        <input name="name" placeholder="Your name" required>
+        <input name="phone" placeholder="Phone number" required>
+        <select name="destination" id="quickDestination"></select>
+        <input name="travelDate" type="date">
+        <input name="travelers" type="number" min="1" value="2" placeholder="Travelers">
+        <button class="btn primary" type="submit">Get Custom Quote</button>
+        <p class="form-status" data-status></p>
+      </form>
+    </section>
+
+    <section class="trust-band">
+      <div><strong>₹ INR Pricing</strong><span>No currency confusion</span></div>
+      <div><strong>Custom Plans</strong><span>Hotels, routes, pace</span></div>
+      <div><strong>24x7 Support</strong><span>Before and during travel</span></div>
+      <div><strong>Easy CRM</strong><span>Admin can edit everything</span></div>
+    </section>
+
+    <section id="packages" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Popular packages</p>
+          <h2>Travel plans ready to customize</h2>
+        </div>
+        <div class="filters">
+          <select id="typeFilter"><option value="">All types</option><option>Domestic</option><option>International</option></select>
+          <select id="destinationFilter"><option value="">All destinations</option></select>
+          <select id="sortFilter"><option value="featured">Featured</option><option value="priceAsc">Price low to high</option><option value="priceDesc">Price high to low</option><option value="newest">Newest</option></select>
+        </div>
+      </div>
+      <div class="grid cards" id="packageGrid"></div>
+    </section>
+
+    <section id="destinations" class="section alt">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Top destinations</p>
+          <h2>Domestic and international favorites</h2>
+        </div>
+      </div>
+      <div class="grid destination-grid" id="destinationGrid"></div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Why Way2Travels</p>
+        <h2>Clear quotes, flexible itineraries, and support that answers.</h2>
+      </div>
+      <div class="feature-list">
+        <div>🏨 Hotel options from 3 Star to 5 Star</div>
+        <div>🚗 Private and shared transfer planning</div>
+        <div>🍽️ Meal plans and sightseeing clarity</div>
+        <div>📞 Call and WhatsApp support at +91 92581 91298</div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Traveler reviews</p>
+          <h2>Realistic sample reviews, admin-editable</h2>
+        </div>
+      </div>
+      <div class="grid review-grid" id="reviewGrid"></div>
+    </section>
+
+    <section id="blogs" class="section alt">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Travel guides</p>
+          <h2>Useful ideas before you book</h2>
+        </div>
+      </div>
+      <div class="grid blog-grid" id="blogGrid"></div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="eyebrow">About Way2Travels</p>
+        <h2>Built for travelers who want a human-made plan, not a confusing cart.</h2>
+      </div>
+      <p>Way2Travels helps Indian travelers compare destinations, customize packages, and book holidays with clear INR pricing. The team can adjust hotels, routes, sightseeing, pace, and budget before final confirmation.</p>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="section-head"><div><p class="eyebrow">FAQ</p><h2>Before you book</h2></div></div>
+      <div class="faq-list" id="faqList"></div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Plan your trip with Way2Travels</h2>
+        <p><strong>Email:</strong> <a id="emailLink" href="mailto:info@way2travels.com">info@way2travels.com</a></p>
+        <p><strong>Phone:</strong> <a id="phoneLink" href="tel:+919258191298">+91 92581 91298</a></p>
+        <p><strong>WhatsApp:</strong> <a id="whatsappLink" href="#">Message now</a></p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input name="name" placeholder="Your name" required>
+        <input name="email" type="email" placeholder="Email address">
+        <input name="phone" placeholder="Phone number" required>
+        <input name="destination" placeholder="Destination interested in">
+        <textarea name="message" placeholder="Tell us your dates, budget, and hotel preference"></textarea>
+        <button class="btn primary" type="submit">Send Inquiry</button>
+        <p class="form-status" data-status></p>
+      </form>
+    </section>
+
+    <section id="privacy" class="legal section alt">
+      <h2>Privacy Policy</h2>
+      <p>Way2Travels stores inquiry details only for travel planning and customer communication. Replace this placeholder with your final legal policy before launch.</p>
+      <h2>Terms and Conditions</h2>
+      <p>Package prices are starting rates in INR and may change by date, availability, hotel category, flights, visa rules, and supplier policies.</p>
+    </section>
+  </main>
+
+  <div class="floating-actions">
+    <a id="floatCall" href="tel:+919258191298">Call</a>
+    <a id="floatWhatsapp" href="#">WhatsApp</a>
+  </div>
+
+  <dialog id="packageDialog">
+    <button class="dialog-close" onclick="document.getElementById('packageDialog').close()">×</button>
+    <div id="packageDetail"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
