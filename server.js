@@ -432,7 +432,12 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Way2Travels running at http://localhost:${PORT}`);
-  console.log(`Admin dashboard: http://localhost:${PORT}/admin.html`);
-});
+if (require.main === module) {
+  server.listen(PORT, () => {
+    console.log(`Way2Travels running at http://localhost:${PORT}`);
+    console.log(`Admin dashboard: http://localhost:${PORT}/admin.html`);
+  });
+}
+
+module.exports = server;
+
