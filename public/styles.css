@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --ink: #172326;
   --muted: #667477;
   --line: #dce7e4;
@@ -36,7 +36,7 @@ nav { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; color: #42
 input, select, textarea { width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; color: var(--ink); }
 textarea { min-height: 116px; resize: vertical; }
 .form-status { min-height: 20px; margin: 0; color: var(--green); font-weight: 800; }
-.trust-band { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border-block: 1px solid var(--line); }
+.trust-band { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border-block: 1px solid var(--line); }
 .trust-band div { background: #fff; padding: 22px clamp(16px, 3vw, 44px); }
 .trust-band strong, .trust-band span { display: block; }
 .trust-band span { color: var(--muted); margin-top: 5px; }
@@ -107,7 +107,6 @@ th { background: #f7fbfa; font-size: 13px; color: #516164; }
   .hero, .split, .contact-section, .detail-grid, .admin-shell { grid-template-columns: 1fr; }
   .hero { min-height: auto; }
   .cards, .destination-grid, .review-grid, .blog-grid, .admin-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .trust-band { grid-template-columns: repeat(2, 1fr); }
   .sidebar { position: static; height: auto; }
 }
 @media (max-width: 640px) {
