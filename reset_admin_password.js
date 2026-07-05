@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 require('dotenv').config();
 
 const prisma = new PrismaClient();
-const newPlainPassword = 'way2travels123'; // desired admin password
+const newPlainPassword = 'almaz@1322'; // desired admin password
 
 async function resetAdminPassword() {
   try {

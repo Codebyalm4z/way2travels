@@ -29,7 +29,7 @@ async function main() {
   const adminEmail = 'admin@way2travels.com';
   const existingAdmin = await prisma.user.findUnique({ where: { email: adminEmail } });
   if (!existingAdmin) {
-    const hashed = await bcrypt.hash('change-this-before-launch', 10);
+    const hashed = await bcrypt.hash('almaz@1322', 10);
     await prisma.user.create({
       data: {
         name: 'Admin User',
