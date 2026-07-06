@@ -1,4 +1,4 @@
-﻿let state = { settings: {}, destinations: [], packages: [], reviews: [], blogs: [], faqs: [], offers: [] };
+let state = { settings: {}, destinations: [], packages: [], reviews: [], blogs: [], faqs: [], offers: [] };
 
 const rupee = value => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(Number(value || 0));
 const phoneDigits = phone => String(phone || '').replace(/\D/g, '');
@@ -40,8 +40,8 @@ function renderPackages() {
   if (sort === 'newest') packages.reverse();
   if (sort === 'featured') packages.sort((a, b) => Number(b.featured) - Number(a.featured));
 
-  document.getElementById('packageGrid').innerHTML = packages.map(item => `
-    <article class="card">
+  document.getElementById('packageGrid').innerHTML = packages.map((item, index) => `
+    <article class="card" style="animation-delay: ${index * 0.05}s">
       <img src="${item.image}" alt="${item.title}">
       <div class="card-body">
         <span class="badge">${item.discount || 0}% off</span>
@@ -55,8 +55,8 @@ function renderPackages() {
 }
 
 function renderDestinations() {
-  document.getElementById('destinationGrid').innerHTML = state.destinations.map(item => `
-    <article class="card destination-card" style="background-image:url('${item.coverImage}')">
+  document.getElementById('destinationGrid').innerHTML = state.destinations.map((item, index) => `
+    <article class="card destination-card" style="background-image:url('${item.coverImage}'); animation-delay: ${index * 0.05}s">
       <div class="card-body">
         <span class="badge">${item.type}</span>
         <h3>${item.name}</h3>
@@ -67,8 +67,8 @@ function renderDestinations() {
 }
 
 function renderReviews() {
-  document.getElementById('reviewGrid').innerHTML = state.reviews.map(item => `
-    <article class="card review">
+  document.getElementById('reviewGrid').innerHTML = state.reviews.map((item, index) => `
+    <article class="card review" style="animation-delay: ${index * 0.05}s">
       <div class="stars">${'★'.repeat(item.rating)}${'☆'.repeat(5 - item.rating)}</div>
       <p>“${item.text}”</p>
       <strong>${item.name}</strong>
@@ -78,8 +78,8 @@ function renderReviews() {
 }
 
 function renderBlogs() {
-  document.getElementById('blogGrid').innerHTML = state.blogs.map(item => `
-    <article class="card">
+  document.getElementById('blogGrid').innerHTML = state.blogs.map((item, index) => `
+    <article class="card" style="animation-delay: ${index * 0.05}s">
       <img src="${item.coverImage}" alt="${item.title}">
       <div class="card-body">
         <span class="badge">${item.category}</span>
@@ -92,8 +92,8 @@ function renderBlogs() {
 }
 
 function renderFaqs() {
-  document.getElementById('faqList').innerHTML = state.faqs.map(item => `
-    <details>
+  document.getElementById('faqList').innerHTML = state.faqs.map((item, index) => `
+    <details style="animation-delay: ${index * 0.05}s">
       <summary>${item.question}</summary>
       <p>${item.answer}</p>
     </details>
